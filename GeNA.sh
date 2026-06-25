@@ -66,7 +66,7 @@ echo "Gathering metrics across NAM-PCs"
 eval $command
 
 ### Multi-nampc test
-command="Rscript joint_test.R --outfile ${res_folder}P_k.txt \
+command="Rscript joint_test_vectorized.R --outfile ${res_folder}P_k.txt \
          --chisq_per_nampc_file ${res_folder}t_per_nampc.txt \
          --ks_file ${res_folder}ks.csv"
 echo "Performing multi-NAM-PC tests"
